@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 1700px;
   margin-top: 180px;
+  padding-bottom: 4rem;
 }
 .main-h1 {
   font-size: 96px;
@@ -70,8 +71,20 @@
   width: 100%;
   line-height: 1.6;
 }
+.join-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  gap: 150px;
+  margin-top: 4rem;
+}
+.join-row .join-box {
+  flex: 0.5;
+}
 @media screen and (max-width: 1248px) {
-  .box-landing {
+  .box-landing,
+  .join-row {
     width: 85%;
   }
   .main-desc {
@@ -79,8 +92,12 @@
   }
 }
 @media screen and (max-width: 886px) {
-  .box-landing {
+  .box-landing,
+  .join-row {
     width: 95%;
+  }
+  .join-row {
+    gap: 20px;
   }
   .main-h1 {
     font-size: 60px;
@@ -94,7 +111,20 @@
     font-size: 12px !important;
   }
 }
+@media screen and (max-width: 512px) {
+  .join-row {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .join-row .join-box {
+    flex: none;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 478px) {
+  .landing {
+    margin-top: 140px;
+  }
   .main-h1 {
     font-size: 40px;
   }

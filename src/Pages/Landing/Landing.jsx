@@ -3,6 +3,7 @@ import "./Landing.css";
 import menu from "../../Assets/Menu.svg";
 import nft1 from "../../Assets/nft1.png";
 import nft2 from "../../Assets/nft2.png";
+import JoinBox from "../../Components/JoinBox";
 function Landing() {
   return (
     <div className="landing">
@@ -21,7 +22,7 @@ function Landing() {
       <div className="box-landing">
         <div className="top-box">
           <img src={menu} alt="" />
-          <h2 className="main-text">Main</h2>
+          <h2 className="main-text">MAIN</h2>
         </div>
         <div className="main-box">
           <h2>
@@ -47,6 +48,10 @@ function Landing() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
+      </div>
+      <div className="join-row">
+        <JoinBox />
+        <JoinBox />
       </div>
     </div>
   );
