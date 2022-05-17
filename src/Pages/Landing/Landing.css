@@ -9,8 +9,8 @@
 }
 .landing-cont {
   background-image: url("../../Assets/bg.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% 105%;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 .landing {
@@ -119,6 +119,11 @@
   }
   .main-box h2 {
     font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .landing-cont {
+    background-size: 300% 105%;
   }
 }
 @media screen and (max-width: 604px) {
