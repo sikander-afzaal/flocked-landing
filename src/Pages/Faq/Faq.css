@@ -5,16 +5,15 @@
   justify-content: center;
   height: auto;
   text-align: center;
-  padding: 3rem 0rem;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .faq .heading-div .big {
   left: -57%;
   top: 51%;
 }
 .faq .heading-div .small {
-  width: 100%;
+  font-size: 2.5rem;
 }
 .desc-faq {
   font-size: 1.2rem;
@@ -40,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   background-color: #272727;
   border-top: 15px;
   cursor: pointer;
@@ -49,7 +48,7 @@
   transition: all 0.3s ease-in-out;
 }
 .faq-btn p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   pointer-events: none;
   text-align: left;
@@ -69,7 +68,7 @@
   width: 100%;
 }
 .answer {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
 }
 .active {
@@ -106,21 +105,21 @@
 }
 @media screen and (max-width: 700px) {
   .faq {
-    margin-top: 4rem;
     padding-top: 0;
   }
 }
 
 @media screen and (max-width: 662px) {
   .faq {
+    margin-top: 2rem;
     gap: 10px;
   }
   .faq .heading-div .small {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .desc-faq {
     margin-left: 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 626px) {
@@ -147,10 +146,17 @@
   .faq-btn svg {
     font-size: 1.3rem;
   }
+  .desc-faq {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 450px) {
   .faq {
-    padding: 0 0 20px 0;
+    margin-top: 1rem;
+    gap: 10px;
+  }
+  .desc-faq {
+    margin-bottom: 10px;
   }
   .answer {
     font-size: 1rem;
@@ -158,7 +164,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .faq-btn p {
+    font-size: 0.9rem;
+  }
   .desc-faq {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

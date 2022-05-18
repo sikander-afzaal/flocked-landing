@@ -10,7 +10,7 @@ function App() {
         <Header />
         <Routes>
           <Route element={<Landing />} path="/" />
-          <Route element={<Faq />} path="/faq" />
+          {/* <Route element={<Faq />} path="/faq" /> */}
         </Routes>
       </div>
     </Router>

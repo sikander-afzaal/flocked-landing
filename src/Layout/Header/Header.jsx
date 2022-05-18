@@ -13,18 +13,26 @@ function Header() {
           <img src={window} alt="" className="window" />
         </div>
         <div className="bottom-header">
-          <Link to={"/"} className="nav-links">
-            Mint
-          </Link>
-          <Link to={"/"} className="nav-links">
-            Stake
-          </Link>
-          <Link to={"/"} className="nav-links">
-            Connect Wallet
-          </Link>
-          <Link to={"/faq"} className="nav-links">
-            FAQs
-          </Link>
+          <div className="left-bottom-header">
+            <Link to={"/"} className="nav-links">
+              Mint
+            </Link>
+            <Link to={"/"} className="nav-links">
+              Stake
+            </Link>
+            <Link to={"/"} className="nav-links">
+              Connect Wallet
+            </Link>
+            {/* <Link to={"/faq"} className="nav-links">
+              FAQs
+            </Link> */}
+          </div>
+          <div className="right-bottom-header">
+            <h1>$AVAX: 33.75</h1>
+            <h1>$EGG: .439</h1>
+            <h1>$FERT: .061</h1>
+            <h1>GAS: 31</h1>
+          </div>
         </div>
       </div>
     </div>

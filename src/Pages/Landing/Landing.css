@@ -28,11 +28,12 @@
   text-transform: uppercase;
 }
 .main-desc {
-  font-size: 14px;
-  text-align: center;
+  font-size: 15px;
+  text-align: left;
   width: 1200px;
   margin-top: 20px;
-  line-height: 1.6;
+  line-height: 1.65;
+  font-family: "Press Start 2P", cursive !important;
 }
 .box-landing {
   margin-top: 3rem;
@@ -42,8 +43,9 @@
   align-items: center;
   flex-direction: column;
   width: 1200px;
-  height: 800px;
+  height: auto;
   border: 1px solid black;
+  padding-bottom: 2rem;
 }
 .top-box {
   display: flex;
@@ -67,9 +69,35 @@
   padding-inline: 1.5rem;
   gap: 20px;
 }
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-box h1 {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
 .main-box h2 {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: #333333;
+  line-height: 1.6;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.list li {
+  font-size: 0.8rem;
+  color: #333333;
+  list-style-image: url("../../Assets/chicken-list.png");
+  list-style-position: inside;
 }
 .nft-div {
   display: flex;
@@ -123,7 +151,7 @@
 }
 @media screen and (max-width: 700px) {
   .landing-cont {
-    background-size: 300% 105%;
+    background-size: 300% 107%;
   }
 }
 @media screen and (max-width: 604px) {
@@ -159,5 +187,8 @@
   }
   .nft-div {
     flex-wrap: wrap;
+  }
+  .main-desc {
+    font-size: 12px;
   }
 }
