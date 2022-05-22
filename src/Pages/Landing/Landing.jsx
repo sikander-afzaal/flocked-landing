@@ -1,8 +1,7 @@
 import React from "react";
 import "./Landing.css";
 import menu from "../../Assets/Menu.svg";
-import nft1 from "../../Assets/nft1.png";
-import nft2 from "../../Assets/nft2.png";
+import tri from "../../Assets/tri.png";
 import JoinBox from "../../Components/JoinBox";
 import Faq from "../Faq/Faq";
 function Landing() {
@@ -93,6 +92,36 @@ function Landing() {
               </h2>
             </div>
             <Faq />
+            <div className="tri-layout">
+              <div className="left-tri">
+                <img src={tri} alt="" />
+              </div>
+              <div className="right-tri">
+                <h2>Example image and text</h2>
+                <h2>Your upgradeable chikn NFT, that lays $egg</h2>
+                <h2>
+                  $egg <br /> The governance and utility token of the chikn
+                  ecosystem. Hodl, use, or sell on the open market
+                </h2>
+                <h2>
+                  $feed <br /> Harvested at chikn.farm, eaten by chikn, or sold
+                  on the open market{" "}
+                </h2>
+                <h2>
+                  Lay <br /> Roost your chikn and lay $egg. Biggr chikn lay more
+                  $egg
+                </h2>
+                <h2>
+                  Farm <br /> Received $egg LP tokens are used to farm $feed at
+                  chikn.
+                </h2>
+                <h2>
+                  Size (Kg / KillerGainz) <br /> $feed permanently increases the
+                  size of your chikn. It's written straight to the metadata of
+                  your NFT
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
         <div className="join-row">

@@ -125,6 +125,30 @@
 .join-row .join-box {
   flex: 0.5;
 }
+.tri-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 3rem;
+}
+.left-tri {
+  display: flex;
+  justify-content: center;
+  flex: 0.3;
+}
+.left-tri img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.right-tri {
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
 @media screen and (max-width: 1248px) {
   .box-landing,
   .join-row {
@@ -132,6 +156,19 @@
   }
   .main-desc {
     width: 90%;
+  }
+}
+@media screen and (max-width: 996px) {
+  .tri-layout {
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+  .right-tri,
+  .left-tri {
+    flex: none;
   }
 }
 @media screen and (max-width: 886px) {
