@@ -125,8 +125,8 @@ function Landing() {
           </div>
         </div>
         <div className="join-row">
-          <JoinBox />
-          <JoinBox />
+          <JoinBox name={"Whitepaper"} />
+          <JoinBox name={"Discord"} />
         </div>
       </div>
     </div>
