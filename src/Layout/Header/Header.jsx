@@ -8,7 +8,7 @@ function Header() {
       <div className="header">
         <div className="top-header">
           <img src={menu} alt="" className="menu" />
-          <div className="pattern"></div>
+          {/* <div className="pattern"></div> */}
           <img src={window} alt="" className="window" />
         </div>
         <div className="bottom-header">
